@@ -18,6 +18,8 @@ function getTarget(arr, target) {
     return undefined;
 }
 
+// return arr.find((num) => num === target) another solution**
+
 console.log(getTarget([2,3,4,5,6,7,8,], 8)); // 8
 console.log(getTarget(['apple', 'orange', 'banana', 'apple'], 'apple')); // apple
 
@@ -34,6 +36,7 @@ function firstBiggerNum(arr) {
 return undefined;
 }
 
+// return arr.find((num) => num > 14); another way to use it 
 console.log(firstBiggerNum([5,9,11,23,10]));
 console.log(firstBiggerNum([10,11,15,20,5]));
 
@@ -65,6 +68,19 @@ console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple,
 }
 */
 
+function getCorrectTargetId(objs, targetid) {
+    for(let obj of objs) {
+        if (obj.id === targetid ) {
+            return obj
+        }
+    }
+    
+    return undefined;
+}
+
+
+
+
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
@@ -73,7 +89,15 @@ console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple,
 }
 */
 
+function getNameInObj(objects, targetid) {
+    for( obj of objects) {
+        const name = obj.name
+        if (obj.id === targetid) {
+            return {name};
+        }
 
+    }
+}
 // Message 10-6_mod_1_review
 
 

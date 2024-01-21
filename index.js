@@ -18,8 +18,14 @@ function getTarget(arr, target) {
     return newArr;
 }
 
+console.log(getTarget([2,3,4,5,6,7,8,], 8)); // Expected [8, 8]
+console.log(getTarget(['apple', 'orange', 'banana', 'apple'], 'apple')); // Expected output: ['apple', 'apple']
+
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
+
+
+
 
 
 

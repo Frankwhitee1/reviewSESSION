@@ -8,6 +8,15 @@
 
 // Given ab array of numbers and a given target. return the target if it's in the array or undefined if it's not
 
+function getTarget(arr, target) {
+    newArr = []
+    for(let i = 0; i < arr.length; i ++) {
+        if (arr[i] === target) {
+            newArr.push(arr[i])
+        }
+    }
+    return newArr;
+}
 
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
@@ -38,7 +47,7 @@
 */
 
 
-Message 10-6_mod_1_review
+// Message 10-6_mod_1_review
 
 
 

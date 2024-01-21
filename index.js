@@ -18,8 +18,8 @@ function getTarget(arr, target) {
     return undefined;
 }
 
-console.log(getTarget([2,3,4,5,6,7,8,], 8)); // Expected [8, 8]
-console.log(getTarget(['apple', 'orange', 'banana', 'apple'], 'apple')); // Expected output: ['apple', 'apple']
+console.log(getTarget([2,3,4,5,6,7,8,], 8)); // 8
+console.log(getTarget(['apple', 'orange', 'banana', 'apple'], 'apple')); // apple
 
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
@@ -39,6 +39,19 @@ console.log(firstBiggerNum([10,11,15,20,5]));
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
 
+
+function strGreaterThanfour(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if  (arr[i].length > 4) {
+            return arr[i];
+        }
+    }
+    return undefined;
+} 
+
+
+console.log(strGreaterThanfour(['dog','cat','razzE','car','redBird']));// razzE, 
+console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple, 
 
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found

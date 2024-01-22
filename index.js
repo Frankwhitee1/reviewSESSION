@@ -52,6 +52,7 @@ function strGreaterThanfour(arr) {
     return undefined;
 } 
 
+// arr[i].length > 4 ? arr[i] : undefined another attempt 
 
 console.log(strGreaterThanfour(['dog','cat','razzE','car','redBird']));// razzE, 
 console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple, 
@@ -90,7 +91,7 @@ function getCorrectTargetId(objs, targetid) {
 */
 
 function getNameInObj(objects, targetid) {
-    for( obj of objects) {
+    for ( const obj of objects) {
         const name = obj.name
         if (obj.id === targetid) {
             return {name};

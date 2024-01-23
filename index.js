@@ -10,7 +10,7 @@
 
 function getTarget(arr, target) {
     
-    for(let i = 0; i < arr.length; i ++) {
+    for(let i = 0; i < arr.length; i++) {
         if (arr[i] === target) {
            return arr[i];
         }
@@ -30,7 +30,7 @@ console.log(getTarget(['apple', 'orange', 'banana', 'apple'], 'apple')); // appl
 function firstBiggerNum(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 14) {
-            return arr[i]
+            return arr[i];
     }
  }
 return undefined;
@@ -52,7 +52,7 @@ function strGreaterThanfour(arr) {
     return undefined;
 } 
 
-// arr[i].length > 4 ? arr[i] : undefined another attempt 
+// arr[i].length > 4 ? arr[i] : undefined; another attempt 
 
 console.log(strGreaterThanfour(['dog','cat','razzE','car','redBird']));// razzE, 
 console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple, 
@@ -71,8 +71,8 @@ console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple,
 
 function getCorrectTargetId(objs, targetId) {
     for(let obj of objs) {
-        if (obj.id === targetid ) {
-            return obj
+        if (obj.id === targetId ) {
+            return obj;
         }
     }
     
@@ -81,7 +81,7 @@ function getCorrectTargetId(objs, targetId) {
 
 
 
-// obj.id === targetId ? obj : undefined
+// obj.id === targetId ? obj : undefined;
 // ternary attempt :-) 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
@@ -92,16 +92,16 @@ function getCorrectTargetId(objs, targetId) {
 
 function getNameInObj(objects, targetid) {
     for ( const obj of objects) {
-        const name = obj.name
+        const name = obj.name;
         if (obj.id === targetid) {
             return {name};
         }
     }
-    return {} 
+    return {};
 } 
 // Message 10-6_mod_1_review
 
-// obj.id === targetid ? {name} : {} 
+// obj.id === targetid ? {name} : {} ;
 
 
 

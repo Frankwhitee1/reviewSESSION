@@ -69,6 +69,11 @@ console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple,
 }
 */
 
+
+
+
+
+
 function getCorrectTargetId(objs, targetId) {
     for(let obj of objs) {
         if (obj.id === targetId ) {
@@ -102,6 +107,7 @@ function getNameInObj(objects, targetid) {
 // Message 10-6_mod_1_review
 
 // obj.id === targetid ? {name} : {} ;
+
 
 
 

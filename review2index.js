@@ -12,7 +12,11 @@ console.log(eachWordCaptialized("i want to sleep "));
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
+function formatGreeting({firstName, lastName, occupation}) {
+    return `Hello ${firstName} ${lastName}, have a great day at your job as a ${occupation}`;
+}
 
+// O(1)
 
 const john = {
     firstName: "John",
@@ -32,6 +36,8 @@ const john = {
   
   // 3.----------------------------------
   // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
+  
+q
   
   /* Example Object
   {

@@ -69,7 +69,7 @@ console.log(strGreaterThanfour(["apple", "banana", "kiwi", "pear"])); // apple,
 }
 */
 
-function getCorrectTargetId(objs, targetid) {
+function getCorrectTargetId(objs, targetId) {
     for(let obj of objs) {
         if (obj.id === targetid ) {
             return obj
@@ -81,8 +81,8 @@ function getCorrectTargetId(objs, targetid) {
 
 
 
-
-
+// obj.id === targetId ? obj : undefined
+// ternary attempt :-) 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
 {
@@ -96,12 +96,12 @@ function getNameInObj(objects, targetid) {
         if (obj.id === targetid) {
             return {name};
         }
-
     }
-}
+    return {} 
+} 
 // Message 10-6_mod_1_review
 
-
+// obj.id === targetid ? {name} : {} 
 
 
 

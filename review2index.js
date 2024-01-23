@@ -1,6 +1,14 @@
 // 1.----------------------------------
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
+function eachWordCaptialized(inputStr) {
+    return inputStr.toUpperCase()
+}
+
+console.log(eachWordCaptialized("hello crazy world"));
+console.log(eachWordCaptialized("i want to sleep "));
+
+
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
@@ -44,12 +52,4 @@ const john = {
   
   
   Message 10-6_mod_1_review
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  '*/

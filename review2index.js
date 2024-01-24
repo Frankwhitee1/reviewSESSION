@@ -2,7 +2,7 @@
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
 function eachWordCaptialized(inputStr) {
-    return inputStr.toUpperCase()
+    return inputStr.split(" ").map(word => word.charAt(0).toUpperCase()+ word.slice(1)).join(" ");
 }
 
 console.log(eachWordCaptialized("hello crazy world"));

@@ -221,14 +221,27 @@ const dinos = [
         }
   }
 
+
+
+//   if (key) {
+// return dino[key]
+// } else {
+// return dino.dinosaur.id
+// }
   // ------------------------------------------------------
   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
   
-  function returnBoolean(dinoObj, mya) {
-    for(const dino of dinoObj){
-        const dinoMya = dino.mya;
-    } if ()
-  } 
+  function isDinoAlive(dino, mya) {
+    if (dino.mya.length === 1 ) {
+        return dino.mya[0] === mya || dino.mya[0] - 1 === mya
+    } else { 
+        return mya >= dino.mya[1] && mya <= dino.mya[0]
+    }
+  }
+    
+
+
+    
 
 
 
@@ -237,7 +250,29 @@ const dinos = [
   // ------------------------------------------------------
   // 3. Given an array of dinosaurs and a key return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
   
-  function 
+  
+  
+  
+  function returnUniqeKey(dinosaurs, key) {
+   let newArr = []
+    for (const dino of dinosaurs) {
+        const dinoId = dinosaurs.dinosaurId
+        if (dino[key] === key) {
+            newArr.push(dino)
+        } else { 
+            newArr.push(dinoId)
+            }
+        }
+    }
+    return newArr;
+    
+  
+  
+  
+  
+  
+  
+//   Message 10-6_mod_1_review')'
   
   
   
@@ -247,14 +282,4 @@ const dinos = [
   
   
   
-  Message 10-6_mod_1_review
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+"("

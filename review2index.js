@@ -37,18 +37,18 @@ const john = {
   // 3.----------------------------------
   // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
   
-// function formattedStr(arrOfObj, targetId, ) {
-//     for (const obj of arrOfObj) {
-//         const occupation = obj.occupation;
-//         const firstName = obj.firstName;
-//         const lastName = obj.lastName
-//         if (obj.id === targetId) {
+function formattedStr(arrOfObj, targetId, ) {
+    for (const obj of arrOfObj) {
+        const occupation = obj.occupation;
+        const firstName = obj.firstName;
+        const lastName = obj.lastName
+        if (obj.id === targetId) {
 
-//             return `Hello ${firstName} ${lastName}, have a great day at your job as a ${occupation}`;
-//         }
-//     }
-//     return `nothing found`;
-// }
+            return `Hello ${firstName} ${lastName}, have a great day at your job as a ${occupation}`;
+        }
+    }
+    return `nothing found`;
+}
 // O(n) n is the number of elements because it itterates thru the arr once using the for of 
 
 

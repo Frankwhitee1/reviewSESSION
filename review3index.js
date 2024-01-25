@@ -257,17 +257,17 @@ const dinos = [
    let newArr = []
     for (const dino of dinosaurs) {
         const dinoId = dinosaurs.dinosaurId
-        if (dino[key] === key) {
-            newArr.push(dino)
+        if (dino[key]) {
+            newArr.push(dino[key])
         } else { 
             newArr.push(dinoId)
             }
         }
+        return newArr;
     }
-    return newArr;
     
   
-  
+//   return dinosaurs.map((dino) => dino[key] || dino.dinosaurId);
   
   
   

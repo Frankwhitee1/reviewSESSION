@@ -17,12 +17,15 @@ function stingLength(arrOfStrings) {
     return newArr;
 }
 
+return arrOfStrings.reduce((acc, str) => (acc.push(str.length),acc), []);
 
 
 
 // ["hello", "world"] => [5, 5] 
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
+
+
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 

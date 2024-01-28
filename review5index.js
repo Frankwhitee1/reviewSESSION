@@ -17,7 +17,7 @@ function stingLength(arrOfStrings) {
     return newArr;
 }
 
-return arrOfStrings.reduce((acc, str) => (acc.push(str.length),acc), []);
+// return arrOfStrings.reduce((acc, str) => (acc.push(str.length),acc), []);
 
 
 
@@ -25,9 +25,28 @@ return arrOfStrings.reduce((acc, str) => (acc.push(str.length),acc), []);
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
+function strGreaterThan5(arrOfStr) {
+    const ArrOfStr = [];
 
+    for(const str of arrOfStr) {
+        if (str.length > 5 ) {
+            ArrOfStr.push(str);
+        }
+    }
+
+    return ArrOfStr;
+}
+
+// return arrOfStr.reduce((acc, str) => {
+//     if (str.length > 5) {
+//         acc.push(str);
+//     }
+//     return acc;
+// }, []
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
+
+
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 

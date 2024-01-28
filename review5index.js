@@ -25,31 +25,47 @@ function stingLength(arrOfStrings) {
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
-// function strGreaterThan5(arrOfStr) {
-//     const ArrOfStr = [];
+function strGreaterThan5(arrOfStr) {
+    const ArrOfStr = [];
 
-//     for(const str of arrOfStr) {
-//         if (str.length > 5 ) {
-//             ArrOfStr.push(str);
-//         }
-//     }
-
-//     return ArrOfStr;
-// }
-
-return arrOfStr.reduce((acc, str) => {
-    if (str.length > 5) {
-        acc.push(str);
+    for(const str of arrOfStr) {
+        if (str.length > 5 ) {
+            ArrOfStr.push(str);
+        }
     }
-    return acc;
-}, []
+
+    return ArrOfStr;
+}
+
+// return arrOfStr.reduce((acc, str) => {
+//     if (str.length > 5) {
+//         acc.push(str);
+//     }
+//     return acc;
+// }, []
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
-function stringsLongerThanfive(arrOfStr){
+function stringsLongerThanfivee(arrOfStr){
+    // const stringslongerthanFive = [];
 
+    // for (const str of arrOfStr) {
+    //     if (str.length > 5) {
+    //         stringslongerthanFive.push(str.length);
+    //     }
+    // }
+
+    // return stringslongerthanFive;
 }
 
+const stringslongerthanFive =  arrOfStr.reduce((acc, str) => {
+    if (str.length > 5) {
+        acc.push(str.length);
+    } 
+
+    return acc;
+
+}, [] )
 
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
@@ -67,7 +83,7 @@ function sumOfEven(arrOfNum) {
 }
 
 
-return arrOfNum.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0)
+// return arrOfNum.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0)
 
 
 // 5. Write a function that takes an array of numbers and returns the min num
@@ -79,7 +95,5 @@ function findMin(arrOfNum) {
 // 6. Write a function that takes in a string and returns the character that appears the most times (only letters count)
 
 function GetMostletterCount(inputStr) {
-    for (const str of inputStr) {
-
-    }
+    for (const str of inputStr) {}
 }

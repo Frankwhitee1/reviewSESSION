@@ -239,19 +239,10 @@ const dinos = [
     }
   }
     
-
-
-    
-
-
-
   // If the dinosaur only has a single value for `mya`, they're considered alive if the `mya` value is equal to the given value or one less. For example, if a dinosaur has a `mya` value of `[29]`, the dinosaur's information will be returned if `29` is entered or `28` is entered.
   
   // ------------------------------------------------------
   // 3. Given an array of dinosaurs and a key return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
-  
-  
-  
   
   function returnUniqeKey(dinosaurs, key) {
    let newArr = []

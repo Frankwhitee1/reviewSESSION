@@ -9,6 +9,17 @@
 
 // 1. Write a function that takes in an array of strings and returns a new array where each string is replaced by it's length
 
+function stingLength(arrOfStrings) {
+    const newArr = []
+    for (const str of arrOfStrings) {
+        newArr.push(str.length)
+    }
+    return newArr;
+}
+
+
+
+
 // ["hello", "world"] => [5, 5] 
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
